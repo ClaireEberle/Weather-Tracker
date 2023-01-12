@@ -11,6 +11,8 @@ header {
 
 .sidebar {
     float:left;
+    height: 90vh;
+   
 }
 #searchbar {
     border-bottom: gray solid 2px;
@@ -28,16 +30,37 @@ ul li {
 
 .main-section {
 display:flex;
-justify-content: space-around;
+flex-wrap: wrap;
 }
+
+.futureW {
+   display: inline;
+    
+}
+
+.card {
+    
+    border: dark blue solid 5px;
+    background: blue;
+    /* display: space-between; */
+    margin: 2px;
+    margin-top: 10px;
+    display: inline-block;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
 #info {
     border:rgb(42, 42, 85) solid 3px;
-    height: 60vh;
-    width:70%;
+    height: 30%;
+    width:80%;
+    margin-left:5%;
 }
+   
+
 #city-name {
     text-align: center;
-    background-color: white;
+    background-color: rgb(211, 235, 232);
     padding: 3px;
 }
 

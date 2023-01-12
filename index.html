@@ -15,23 +15,50 @@
     <main class="">
         <aside class="sidebar">
             <div id="searchbar">
-            <h2>Search for a city:</h2>
-            <input type="text" id="cityinput">
-            <button type="button" id="search-button">Search</button>
-        </div>
-        <ul id="savedSearch">
+             <h2>Search for a city:</h2>
+             <input type="text" id="cityinput">
+             <button type="button" id="search-button">Search</button>
+            </div>
+         <ul id="savedSearch">
 
-        </ul>
+         </ul>
         </aside>
     <section class="main-section">
 <div id="info">
     <h2 id="city-name">    </h2>
-    <h3 >Temperature: <span id="temp"></span></h3>
-    <h3>Wind:</h3>
-    <h3>Humidity:</h3>
+    <h3 >Current Temperature: <span id="temp"></span></h3>
+    <h3>High of: <span id="tempM"></span></h3>
+    <h3>Low of: <span id="tempL"></span></h3>
+    <h3>Humidity: <span id="Humidity"></span></h3>
 </div>
-    </section>
-    </main>
+<div class="futureW">
+    <div class="card">
+        <h3 >Temperature: <span id="tempF1"></span></h3>
+        <h3>High of: <span id="tempF1M"></span></h3>
+        <h3>Low of: <span id="tempF1L"></span></h3>
+        <h3>Humidity: <span id="HumidityF1"></span></h3>
+    </div>
+    <div class="card">
+        <h3 >Temperature: <span id="tempF1"></span></h3>
+        <h3>High of: <span id="tempF2M"></span></h3>
+        <h3>Low of: <span id="tempF2L"></span></h3>
+        <h3>Humidity: <span id="HumidityF2"></span></h3>
+    </div>
+    <div class="card">
+        <h3 >Temperature: <span id="tempF1"></span></h3>
+        <h3>High of: <span id="tempF3M"></span></h3>
+        <h3>Low of: <span id="tempF3L"></span></h3>
+        <h3>Humidity: <span id="HumidityF3"></span></h3>
+    </div>
+    <div class="card">
+        <h3 >Temperature: <span id="tempF1"></span></h3>
+        <h3>High of: <span id="tempF4M"></span></h3>
+        <h3>Low of: <span id="tempF4L"></span></h3>
+        <h3>Humidity: <span id="HumidityF3"></span></h3>
+    </div>
+</div>
+</main>
+</section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./script.js"></script>
 </body>

@@ -26,15 +26,28 @@ return response.json()
 .then(function(data){
     console.log(data)
     var temp = data.main.temp
-    $("#temp").text(temp);
+    var tempF = (Math.trunc((temp - 273.15) * 9/5 + 32)) 
+    $("#temp").text(tempF + " °F");
+
+    var tempM = data.main.temp_max
+    var tempMF = (Math.trunc((tempM - 273.15) * 9/5 + 32)) 
+    $("#tempM").text(tempMF + " °F");
+
+    var tempL = data.main.temp_min
+    var tempLF = (Math.trunc((tempL - 273.15) * 9/5 + 32)) 
+    $("#tempL").text(tempLF + " °F");
+
+
     if (data.clouds.all > 75){
         $("#city-name").append(" ☁️")
     } else if (data.clouds.all < 15){
     $("#city-name").append(" ☀️")
 } else {
     $("#city-name").append(" ⛅")
-
 }
+var humidity = data.main.humidity
+$("#Humidity").text(humidity + "%")
+
 
 })
 
